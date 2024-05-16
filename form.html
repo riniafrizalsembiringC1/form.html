@@ -1,0 +1,67 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/pendaftaran/daftar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Formulir Pendaftaran Mahasiswa</h3>
+
+            <div class="row">
+                <label for="">Nomor Pendaftaran</label>
+                <div class="form-group">
+                    <div class="col-md-2">
+                        <input type="text" name="" id="nodaftar" class="form-control" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Nama</label>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <input type="text" id="nama" class="form-control" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Alamat</label>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <textarea name="alamat" id="alamat" class="form-control" required=""></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Tanggal Lahir</label>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <input type="date" id="tgllahir" class="form-control" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="">Program Studi</label>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <select id="ps" class="form-control" required="">
+                            <option disabled="" selected="">- Pilih Program Studi -</option>
+                            <option value="A11">Teknik Informatika S1</option>
+                            <option value="A12">Sistem Informasi S1</option>
+                            <option value="A14">Desain Komunikasi Visual S1</option>
+                            <option value="A15">Ilmu Komunikasi S1</option>
+                            <option value="-">Lainnya</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <button class="btn btn-success" id="save" onclick="simpandaftar()">Simpan</button>
+                </div>
+            </div>
+            <div id="hasilinput"></div>
+    </div>
+
+</body></html>
